@@ -5,3 +5,15 @@
 <p align="center">
     <a href="https://itsmartonic.github.io/WeatherApplication/">View Live Version</a>
 </p>
+
+<h1 align="center">
+    <b>✨ Text Goes Here</b>
+</h1>
+
+<h1 align="center">
+    <b>🎭 Text Goes Here</b>
+</h1>
+
+<h1 align="center">
+    <b>💎 Text Goes Here</b>
+</h1>
