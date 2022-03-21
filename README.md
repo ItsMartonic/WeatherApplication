@@ -3,5 +3,5 @@
 </h1>
 
 <p align="center">
-    <a href="https://github.com/ItsMartonic/WeatherApplication/">View Live Version</a>
+    <a href="https://itsmartonic.github.io/WeatherApplication/">View Live Version</a>
 </p>
