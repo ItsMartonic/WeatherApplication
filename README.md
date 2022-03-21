@@ -10,10 +10,22 @@
     <b>✨ Text Goes Here</b>
 </h1>
 
+<p align="center">
+    Text Goes Here
+<p>
+
 <h1 align="center">
     <b>🎭 Text Goes Here</b>
 </h1>
 
+<p align="center">
+    Text Goes Here
+<p>
+
 <h1 align="center">
     <b>💎 Text Goes Here</b>
 </h1>
+
+<p align="center">
+    Text Goes Here
+<p>
