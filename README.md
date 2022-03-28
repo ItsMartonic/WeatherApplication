@@ -11,13 +11,10 @@
 </h1>
 
 <p align="center">
-- Text Goes Here
 <br>
+- Light & Dark Mode
 - Text Goes Here
-<br>
 - Text Goes Here
-<br>
 - Text Goes Here
-<br>
 - Text Goes Here
 </p>
