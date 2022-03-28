@@ -1,7 +1,8 @@
 /* COLORS */
 
 :root{
-    --website-color: rgb(15, 20, 30);
+    --website-bright: rgb(15, 20, 30);
+    --website-dark: rgb(10, 15, 25);
     --preloader-color: rgb(30, 144, 255);
     --text-background: rgb(235, 235, 235);
 
@@ -17,7 +18,7 @@ html {
 }
 
 body {
-    background-color: var(--website-color);
+    background-color: var(--website-dark);
     font-family: "IBM Plex Sans Condensed";
     color: var(--text-background);
     overflow: auto;
@@ -30,7 +31,7 @@ body {
 .preloader-container{
     width: 100%;
     height: 100vh;
-    background-color: var(--website-color);
+    background-color: var(--website-dark);
     position: fixed;
     display: flex;
     align-items: center;
@@ -78,4 +79,72 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--scrollbar-hover);
+}
+
+/* SECTIONS */
+
+#header-section {
+    background-color: var(--website-dark);
+}
+
+#body-section {
+    background-color: var(--website-bright);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#footer-section {
+    background-color: var(--website-dark);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* HEADER */
+
+.header-container {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+}
+
+.text-title-main {
+    color: var(--text-background);
+    font-size: 3.5vw;
+}
+
+/* BODY */
+
+.body-container {
+    text-align: center;
+    color: var(--text-background);
+    font-size: 17.5px;
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+}
+
+/* FOOTER */
+
+.footer-container {
+    text-align: center;
+    color: var(--text-background);
+    font-size: 1.35vw;
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+}
+
+.footer-padding {
+    padding: 0;
+}
+
+.footer-icon-list {
+    display: inline-block;
+    margin: 5px;
+    padding: 0;
+}
+
+.footer-icon {
+    height: 50px;
 }
