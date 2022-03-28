@@ -11,9 +11,13 @@
 </h1>
 
 <p align="center">
-- Text
+- Text Goes Here
 <br>
-- Goes
+- Text Goes Here
 <br>
-- Here
+- Text Goes Here
+<br>
+- Text Goes Here
+<br>
+- Text Goes Here
 </p>
