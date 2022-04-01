@@ -3,6 +3,7 @@
 :root{
     --website-bright: rgb(15, 20, 30);
     --website-dark: rgb(10, 15, 25);
+    --weather-color: rgb(55, 65, 75);
     --preloader-color: rgb(30, 144, 255);
     --text-background: rgb(235, 235, 235);
 
@@ -122,6 +123,16 @@ body {
     margin: auto;
     width: 50%;
     padding: 15px;
+}
+
+.weather-container {
+    text-align: center;
+    color: var(--text-background);
+    font-size: 17.5px;
+    background-color: var(--weather-color);
+    margin: auto;
+    width: 75%;
+    padding: 25px;
 }
 
 /* FOOTER */
