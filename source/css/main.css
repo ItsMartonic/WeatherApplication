@@ -141,6 +141,8 @@ body {
 .search-bar {
     display: flex;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .search-icon {
@@ -160,9 +162,13 @@ body {
     border: 2px solid var(--input-field-color);
 }
 
-.location-image {}
+.location-image {
+    padding: 10px;
+}
 
-.weather-information {}
+.weather-information {
+    padding: 10px;
+}
 
 /* FOOTER */
 
