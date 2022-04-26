@@ -149,6 +149,7 @@ body {
     background: var(--icon-background-color);
     color: var(--icon-search-color);
     min-width: 20px;
+    cursor: pointer;
 }
 
 .search-input {
@@ -159,6 +160,10 @@ body {
 
 .search-input:focus {
     border: 2px solid var(--input-field-color);
+}
+
+.interactive-map {
+    padding: 10px;
 }
 
 .location-image {
