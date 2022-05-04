@@ -51,24 +51,24 @@
             <div class="weather-container">
 
                 <div class="search-bar">
-                    <i class="fa fa-search search-icon"></i>
                     <input type="text" class="search-input" placeholder="Search">
+                    <button class="search-button"><i class="fa fa-search search-icon"></i></button>
                     <!-- Type Country -> Autofills Cities -->
                 </div>
 
-                <div class="interactive-map">
-                    <p>Map Goes Here</p>
-                    <!-- Add This If Possible -->
-                </div>
-
-                <div class="location-image">
-                    <p>Image Goes Here</p>
-                    <!-- Image Of Search Location -->
-                </div>
-
                 <div class="weather-information">
-                    <p>Information Goes Here</p>
-                    <!-- Time / Temperature / Wind -->
+                    <div class="city">City Name</div>
+                    <div class="temperature">Current Temperature</div>
+                    <div class="flex-icon">
+                        <img src="https://openweathermap.org/img/wn/01d.png" class="icon"/>
+                        <!-- Weather Conditions - https://openweathermap.org/weather-conditions -->
+                        <div class="description">Weather Description</div>
+                    </div>
+                    <div class="humidity">Humidity</div>
+                    <div class="pressure">Atmospheric Pressure</div>
+                    <div class="wind">Wind Speed</div>
+                    <div class="visibility">Visibility</div>
+                    <div class="location-image">Location Image</div>
                 </div>
 
             </div>
