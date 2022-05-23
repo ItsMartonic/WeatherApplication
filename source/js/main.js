@@ -8,3 +8,17 @@ $(window).on("load",function(){
     $(".preloader-container").delay(1500).fadeOut(1500);
     tempStyle.parentNode.removeChild(tempStyle);
 });
+
+// MAIN CODE
+
+
+
+
+
+
+
+
+
+
+
+
