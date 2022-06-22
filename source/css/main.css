@@ -22,6 +22,11 @@
     /* Base */
     --base-background: rgb(25, 25, 25);
 
+    /* Scrollbar */
+    --scrollbar-track: rgb(205, 205, 205);
+    --scrollbar-thumb: rgb(155, 155, 155);
+    --scrollbar-hover: rgb(105, 105, 105);
+
     /* Header */
     --header-background: rgb(255, 255, 255);
 
@@ -77,6 +82,24 @@ body {
 
 a {
     text-decoration: none;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-hover);
 }
 
 /* Header */
