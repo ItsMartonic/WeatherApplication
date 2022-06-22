@@ -1,223 +1,292 @@
-/* COLORS */
+/* Variables */
 
-:root{
-    --website-bright: rgb(20, 20, 30);
-    --website-dark: rgb(15, 15, 25);
-    --weather-color: rgb(55, 65, 75);
-    --preloader-color: rgb(255, 100, 5);
-    --input-field-color: rgb(255, 100, 5);
-    --icon-background-color: rgb(255, 100, 5);
-    --icon-hover-background-color: rgb(255, 70, 5);
-    --icon-search-color: rgb(235, 235, 235);
-    --text-background: rgb(235, 235, 235);
-    --scrollbar-track: rgb(255, 255, 255);
-    --scrollbar-thumb: rgb(155, 155, 155);
-    --scrollbar-hover: rgb(85, 85, 85);
+:root {
+    /* Title Text */
+    --title-font-family: "Poppins", sans-serif;
+    --title-font-weight: 700;
+    --title-font-size: 30px;
+    --title-font-color: rgb(25, 25, 25);
+
+    /* Subtitle Text */
+    --subtitle-font-family: "Poppins", sans-serif;
+    --subtitle-font-weight: 700;
+    --subtitle-font-size: 25px;
+    --subtitle-font-color: rgb(25, 25, 25);
+
+    /* Base Text */
+    --base-font-family: "Poppins", sans-serif;
+    --base-font-weight: 400;
+    --base-font-size: 20px;
+    --base-font-color: rgb(255, 255, 255);
+
+    /* Base */
+    --base-background: rgb(25, 25, 25);
+
+    /* Header */
+    --header-background: rgb(255, 255, 255);
+
+    /* Main */
+    --main-background: rgb(235, 235, 235);
+    --main-container-background: rgb(25, 25, 25);
+    --search-bar-background: rgb(255, 255, 255);
+    --search-button-background: rgb(235, 235, 235);
+    --search-button-hover-background: rgb(255, 100, 5);
+    --seperator-color: rgb(255, 100, 5);
+
+    /* Footer */
+    --footer-background: rgb(255, 255, 255);
+    --footer-icon-border: rgb(25, 25, 25);
 }
 
-/* FORMATTING */
+/* Base */
 
 html {
-    scroll-behavior: smooth;
+    font-family: var(--base-font-family);
+    font-weight: var(--base-font-weight);
+    font-size: var(--base-font-size);
+    color: var(--base-font-color);
 }
 
 body {
-    background-color: var(--website-dark);
-    font-family: "IBM Plex Sans Condensed";
-    color: var(--text-background);
+    background: var(--base-background);
     overflow: auto;
     margin: 0;
-    padding: 0;
 }
 
-/* PRELOADER */
+.title-text {
+    font-family: var(--title-font-family);
+    font-weight: var(--title-font-weight);
+    font-size: var(--title-font-size);
+    color: var(--title-font-color);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
 
-.preloader-container{
-    width: 100%;
-    height: 100vh;
-    background-color: var(--website-dark);
-    position: fixed;
+.subtitle-text {
+    font-family: var(--subtitle-font-family);
+    font-weight: var(--subtitle-font-weight);
+    font-size: var(--subtitle-font-size);
+    color: var(--subtitle-font-color);
+    text-align: center;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+#header {
+    background: var(--header-background);
+    padding: 10px;
+}
+
+/* Main */
+
+#main {
+    background: var(--main-background);
+    padding: 10px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.main-container {
+    background: var(--main-container-background);
+    text-align: center;
+    padding: 25px;
+    border-radius: 30px;
+    width: 50%;
+    margin: auto;
+}
+
+.search {
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.preloader{
-    width: 50px;
-    height: 50px;
-    border: 5px solid;
-    color: var(--preloader-color);
-    border-radius: 50%;
-    border-top-color: transparent;
-    animation: preloader 1.25s linear infinite;
-}
-
-@keyframes preloader{
-    25%{
-        color: var(--preloader-color);
-    }
-    50%{
-        color: var(--preloader-color);
-    }
-    75%{
-        color: var(--preloader-color);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-
-/* SCROLLBAR */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--scrollbar-track);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--scrollbar-hover);
-}
-
-/* SECTIONS */
-
-#header-section {
-    background-color: var(--website-dark);
-}
-
-#body-section {
-    background-color: var(--website-bright);
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-#footer-section {
-    background-color: var(--website-dark);
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-/* HEADER */
-
-.header-container {
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    padding: 5px;
-}
-
-.text-title-main {
-    color: var(--text-background);
-    font-size: 3.5vw;
-}
-
-/* BODY */
-
-.body-container {
-    text-align: center;
-    color: var(--text-background);
-    font-size: 17.5px;
-    margin: auto;
-    width: 50%;
-    padding: 15px;
-}
-
-.weather-container {
-    text-align: center;
-    color: var(--text-background);
-    font-size: 17.5px;
-    background-color: var(--weather-color);
-    margin: auto;
-    width: 75%;
-    padding: 25px;
-}
-
 .search-bar {
-    display: flex;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.search-input {
-    width: 100%;
+    background: var(--search-bar-background);
+    width: 50%;
     padding: 10px;
+    border: none;
     outline: none;
-    border: 2px solid var(--input-field-color);
 }
 
 .search-button {
-    background: var(--icon-background-color);
-    padding: 5px;
-    border: 1px;
+    background: var(--search-button-background);
+    padding: 10px;
+    border: none;
     outline: none;
-    transition: 0.3s;
     cursor: pointer;
 }
 
 .search-button:hover {
-    background: var(--icon-hover-background-color);
+    background: var(--search-button-hover-background);
+    transition: 0.25s;
 }
 
-.search-icon {
+.weather-information {
     padding: 10px;
-    color: var(--icon-search-color);
-    min-width: 20px;
 }
 
-.flex-icon {
+.weather-information.loading {
+    visibility: hidden;
+}
+
+.weather-information.loading:after {
+    visibility: visible;
+    content: "Loading Weather Information";
+}
+
+.seperator {
+    border-bottom: 3px solid var(--seperator-color);
+    width: 10%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.section-heading {
+    padding: 10px;
+    font-size: 35px;
+}
+
+.city-name {
+    padding: 10px;
+    font-size: 35px;
+}
+
+.country {
+    padding: 10px;
+}
+
+.latitude {
+    padding: 10px;
+}
+
+.longitude {
+    padding: 10px;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    padding-right: 5px;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.clouds {
+    padding: 10px;
+}
+
+.humidity {
+    padding: 10px;
+}
+
+.temperature {
+    padding: 10px;
+}
+
+.feels-like {
+    padding: 10px;
+}
+
+.temp-min {
+    padding: 10px;
+}
+
+.temp-max {
+    padding: 10px;
+}
+
+.wind-speed {
+    padding: 10px;
+}
+
+.wind-direction {
+    padding: 10px;
+}
+
+.wind-gust {
+    padding: 10px;
+}
+
+.location-image {
+    margin-top: 15px;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.flexbox {
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.location-image {
-    margin: auto;
-    padding: 25px;
-    height: 50%;
-    width: 50%;
-    background: var(--website-bright);
+@media only screen and (max-width: 768px) {
+    .main-container {
+        width: 75%;
+    }
+    .search-bar {
+        width: 75%;
+    }
+    .seperator {
+        width: 10%;
+    }
+    .location-image {
+        height: 300px;
+    }
 }
 
-.weather-information.loading {
-    visibility: hidden;
-    max-height: 20px;
-    position: relative;
+@media only screen and (max-width: 425px) {
+    .main-container {
+        width: 80%;
+    }
+    .search-bar {
+        width: 65%;
+    }
+    .seperator {
+        width: 20%;
+    }
+    .location-image {
+        height: 125px;
+    }
 }
 
-.weather-information.loading:after {
-    visibility: visible;
-    content: "Loading";
-    position: absolute;
+/* Footer */
+
+#footer {
+    background: var(--footer-background);
+    padding: 10px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
-/* FOOTER */
-
-.footer-container {
-    text-align: center;
-    color: var(--text-background);
-    font-size: 1.35vw;
-    margin: auto;
-    width: 50%;
-    padding: 15px;
-}
-
-.footer-padding {
-    padding: 0;
-}
-
-.footer-icon-list {
-    display: inline-block;
-    margin: 5px;
-    padding: 0;
+.footer-icon-wrapper {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-icon {
-    height: 50px;
+    margin: 10px;
+    border: 3px solid var(--footer-icon-border);
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
 }

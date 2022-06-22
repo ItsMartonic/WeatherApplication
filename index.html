@@ -6,88 +6,82 @@
     <title>Weather Application</title>
     <link rel="icon" href="source/images/icon.png">
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- JavaScript -->
-    <script src="source/js/main.js"></script>
-
-    <!-- Font Family -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Stylesheet -->
-    <link rel="Stylesheet" href="source/css/main.css">
-
     <!-- Metadata -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="source/css/main.css">
+
+    <!-- JavaScript -->
+    <script src="source/js/main.js" defer></script>
+
 </head>
 <body>
 
-    <!-- Preloader -->
-    <div class="preloader-container">
-        <div class="preloader">
-        </div>
+    <!-- Header -->
+    <div id="header">
+        <div class="title-text">Weather Application</div>
     </div>
 
-    <!-- Header Section -->
-    <section id="header-section">
-        <div class="header-container">
-            <div class="text-title-main">
-                <p>WEATHER APPLICATION</p>
+    <!-- Main -->
+    <div id="main">
+        <div class="main-container">
+            <!-- Search -->
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Search City Name">
+                <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
             </div>
-        </div>
-    </section>
-
-    <!-- Body Section -->
-    <section id="body-section">
-        <div class="body-container">
-
-            <div class="weather-container">
-
-                <div class="search-bar">
-                    <input type="text" class="search-input" placeholder="Search">
-                    <button class="search-button"><i class="fa fa-search search-icon"></i></button>
-                    <!-- Type Country -> Autofills Cities -->
+            <!-- Weather Information-->
+            <div class="weather-information loading">
+                <div class="city-name">City Name</div>
+                <div class="country">Country</div>
+                <div class="latitude">Latitude</div>
+                <div class="longitude">Longitude</div>
+                <div class="seperator"></div>
+                <div class="section-heading">Conditions</div>
+                <div class="flexbox">
+                    <img src="https://openweathermap.org/img/wn/04n.png" title="Weather Icon" alt="Weather Icon" class="icon"/>
+                    <div class="description">Description</div>
                 </div>
-
-                <div class="weather-information">
-                    <div class="city">City Name</div>
-                    <div class="temperature">Current Temperature</div>
-                    <div class="flex-icon">
-                        <img src="https://openweathermap.org/img/wn/01d.png" class="icon"/>
-                        <!-- Weather Conditions - https://openweathermap.org/weather-conditions -->
-                        <div class="description">Weather Description</div>
-                    </div>
-                    <div class="humidity">Humidity</div>
-                    <div class="pressure">Atmospheric Pressure</div>
-                    <div class="wind">Wind Speed</div>
-                    <div class="visibility">Visibility</div>
-                    <div class="location-image">Location Image</div>
-                </div>
-
+                <div class="clouds">Clouds</div>
+                <div class="humidity">Humidity</div>
+                <div class="seperator"></div>
+                <div class="section-heading">Temperature</div>
+                <div class="temperature">Temperature</div>
+                <div class="feels-like">Feels Like</div>
+                <div class="temp-min">Temperature Minimum</div>
+                <div class="temp-max">Temperature Maximum</div>
+                <div class="seperator"></div>
+                <div class="section-heading">Wind</div>
+                <div class="wind-speed">Wind Speed</div>
+                <div class="wind-direction">Wind Direction</div>
+                <div class="seperator"></div>
+                <div class="section-heading">Image</div>
+                <div class="location-image"></div>
             </div>
+          </div>
+    </div>
 
+    <!-- Footer -->
+    <div id="footer">
+        <div class="subtitle-text">Weather Application</div>
+        <div class="footer-icon-wrapper">
+            <!-- GitHub Repository -->
+            <a href="https://github.com/ItsMartonic/WeatherApplication">
+                <img class="footer-icon" title="GitHub Repository" alt="GitHub Repository" src="source/images/github-repository.jpeg">
+            </a>
+            <!-- OpenWeatherMap API-->
+            <a href="https://openweathermap.org/api">
+                <img class="footer-icon" title="OpenWeatherMap API" alt="OpenWeatherMap API" src="source/images/openweathermap-api.jpeg">
+            </a>
         </div>
-    </section>
-
-    <!-- Footer Section -->
-    <section id="footer-section">
-        <div class="footer-container">
-        <ul class="footer-padding">
-            <li class="footer-icon-list">
-                <a href="https://github.com/ItsMartonic/WeatherApplication"><img class="footer-icon" src="source/images/github.png" title="GitHub Repository"></a>
-            </li>
-        </ul>
-            <p>WEATHER APPLICATION</p>
-            <p>MARTIN 2022</p>
-        </div>
-    </section>
+        <div class="subtitle-text">Created By Martin</div>
+    </div>
 
 </body>
 </html>
