@@ -1,4 +1,4 @@
-// Weather Application (Source: https://github.com/DenverCoder1/weather-app-tutorial)
+// Weather Application
 
 let weather = {
     apiKey: "5caf9f0fbae48e2481e8a33e558c5381",
