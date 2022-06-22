@@ -138,11 +138,18 @@ a {
 
 .weather-information.loading {
     visibility: hidden;
+    position: relative;
+    max-height: 30px;
 }
 
 .weather-information.loading:after {
+    padding: 15px;
     visibility: visible;
-    content: "Loading Weather Information";
+    position: absolute;
+    content: "Loading...";
+    top: 0px;
+    left: 0px;
+    right: 0px;
 }
 
 .seperator {
