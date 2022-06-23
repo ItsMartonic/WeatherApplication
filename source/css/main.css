@@ -41,6 +41,7 @@
     /* Footer */
     --footer-background: rgb(255, 255, 255);
     --footer-icon-border: rgb(25, 25, 25);
+    --footer-icon-hover-border: rgb(255, 100, 5);
 }
 
 /* Base */
@@ -319,4 +320,9 @@ a {
     border-radius: 50%;
     height: 75px;
     width: 75px;
+}
+
+.footer-icon:hover {
+    border: 3px solid var(--footer-icon-hover-border);
+    transition: 0.25s;
 }
